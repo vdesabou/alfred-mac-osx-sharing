@@ -1,0 +1,8 @@
+{
+    "workflow-export" :
+	    {"directory" : "/Users/vincent/Dropbox/Alfred.alfredpreferences/workflows/alfred-mountain-lion-builtin-sharing/",
+		 "enable": true},
+    "source-export":
+		{"directory" : "~/Downloads",
+		 "enable": false}
+}
