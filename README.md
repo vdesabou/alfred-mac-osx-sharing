@@ -1,12 +1,10 @@
 alfred-mountain-lion-builtin-sharing
 ==========================
 
-This is "Spotify Mini Player", like the alfred built-in iTunes Mini Player, but for Spotify!
+Use built-in sharing introduced in Mac OS X 10.8 Mountain Lion directly from Alfred!
 
 ## Description
 
-Use built-in sharing introduced in Mac OS X 10.8 Mountain Lion directly from Alfred!
- 
 This workflow is using the amazing command line [*terminal-share*](https://github.com/mattt/terminal-share)
  
 You can call directly *share* command (or use a hotkey) if you just want to share a message.
