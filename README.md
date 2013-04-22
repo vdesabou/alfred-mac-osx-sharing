@@ -28,14 +28,14 @@ Here are some examples:
 
 Download the workflow below and open in Alfred.
 
-[Download Workflow](https://raw.github.com/vdesabou/alfred-spotify-mini-player/master/SpotifyMiniPlayer.alfredworkflow)
+[Download Workflow](https://raw.github.com/vdesabou/alfred-mountain-lion-builtin-sharing/master/MountainLionBuilt-inSharing.alfredworkflow)
 
 
 ## History
 
 1.11:
 
-* Move to [GitHub]()
+* Move to [GitHub](https://github.com/vdesabou/alfred-mountain-lion-builtin-sharing)
 
 1.10:
 
