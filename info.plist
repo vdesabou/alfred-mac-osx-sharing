@@ -31,6 +31,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2008C888-E6D1-44D2-A2D0-9DFC550CD2AF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A294727-5556-4045-8D0F-2CF320CF9706</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>33E342C4-064F-4152-BE3C-1D0427506826</key>
 		<array>
 			<dict>
@@ -363,6 +376,19 @@ EOT</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>share</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>2008C888-E6D1-44D2-A2D0-9DFC550CD2AF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -549,6 +575,13 @@ THE SOFTWARE.</string>
 			<integer>300</integer>
 			<key>ypos</key>
 			<real>230</real>
+		</dict>
+		<key>2008C888-E6D1-44D2-A2D0-9DFC550CD2AF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>360</integer>
 		</dict>
 		<key>30B67D52-9776-4605-BA57-74D88DBA6AF0</key>
 		<dict>
