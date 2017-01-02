@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.vdesabou.ml.builtin.services</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>0A294727-5556-4045-8D0F-2CF320CF9706</key>
@@ -15,6 +17,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -23,6 +27,8 @@
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string>Upload file to Droplr and add url at the end of message (only for facebook, twitter, imessage and email)</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>33E342C4-064F-4152-BE3C-1D0427506826</key>
@@ -34,6 +40,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>5206A75A-39FD-4084-B8A3-8739AED62C91</key>
@@ -45,6 +53,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>5C9031A7-52E4-4EE9-80CE-0C4BD1A8C6B4</key>
@@ -56,6 +66,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>5D0AD413-7AA8-450B-89F7-0E338C9C64B8</key>
@@ -67,6 +79,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>7801A5A4-845B-4A28-90E3-4498D66A3F72</key>
@@ -78,6 +92,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>7A994322-2AB8-4864-BFE2-D70B04EF3B2D</key>
@@ -89,6 +105,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>F1AC8869-D9DD-42C3-BC95-DBFC24C942A1</key>
@@ -100,6 +118,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>F362AD8A-2F3A-4A3E-B3DC-332530AB5F22</key>
@@ -111,30 +131,38 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
 	<string>vdesabou</string>
 	<key>description</key>
-	<string>Use Mountain Lion Built-in Sharing</string>
+	<string>Use Mac OS X Sharing</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Mountain Lion Built-in Sharing</string>
+	<string>Mac OS X Sharing</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
 				<string>echo "{query}" &gt; file_list
 
 osascript &lt;&lt;EOT
-tell application "Alfred 2" to search "share "
+tell application "Alfred 3" to search "share "
 EOT</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -142,6 +170,8 @@ EOT</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>35B93386-30BE-4992-A757-2405BC43B489</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -151,12 +181,14 @@ EOT</string>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>Built-in Sharing</string>
+				<string>Mac OS X Sharing</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>5D0AD413-7AA8-450B-89F7-0E338C9C64B8</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -165,6 +197,10 @@ EOT</string>
 				<integer>0</integer>
 				<key>argument</key>
 				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
@@ -173,29 +209,47 @@ EOT</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>33E342C4-064F-4152-BE3C-1D0427506826</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>38</integer>
 				<key>keyword</key>
 				<string>share</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Please wait...</string>
 				<key>script</key>
 				<string>ksh share.ksh "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>Select a file to share using File Action or Hotkey</string>
 				<key>title</key>
-				<string>Share using Mountain Lion Built-in Sharing</string>
+				<string>Share using Mac OS X Sharing</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -205,14 +259,22 @@ EOT</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>0A294727-5556-4045-8D0F-2CF320CF9706</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>38</integer>
 				<key>script</key>
 				<string>ksh action.ksh "{query}" ""</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -220,6 +282,8 @@ EOT</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>7801A5A4-845B-4A28-90E3-4498D66A3F72</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -228,11 +292,7 @@ EOT</string>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
 				<true/>
-				<key>output</key>
-				<integer>0</integer>
 				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
@@ -243,6 +303,8 @@ EOT</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>30B67D52-9776-4605-BA57-74D88DBA6AF0</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -253,6 +315,10 @@ EOT</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>share </string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
@@ -261,19 +327,29 @@ EOT</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>3C6974D9-955C-4F0F-B4CD-8CB2C12574FA</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>38</integer>
 				<key>script</key>
 				<string>ksh action.ksh "{query}" "droplr"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -281,6 +357,8 @@ EOT</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>5C9031A7-52E4-4EE9-80CE-0C4BD1A8C6B4</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -291,6 +369,10 @@ EOT</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>twitter</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>17</integer>
 				<key>hotmod</key>
@@ -301,11 +383,15 @@ EOT</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>F1AC8869-D9DD-42C3-BC95-DBFC24C942A1</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -316,6 +402,10 @@ EOT</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>message</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>41</integer>
 				<key>hotmod</key>
@@ -326,19 +416,29 @@ EOT</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>F362AD8A-2F3A-4A3E-B3DC-332530AB5F22</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
 				<string>./terminal-share.app/Contents/MacOS/terminal-share -service "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -346,6 +446,8 @@ EOT</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>B812494E-65FA-4A2F-B69D-4F415A4DCF9E</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -356,6 +458,10 @@ EOT</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>facebook</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>3</integer>
 				<key>hotmod</key>
@@ -366,11 +472,15 @@ EOT</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>7A994322-2AB8-4864-BFE2-D70B04EF3B2D</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -381,6 +491,10 @@ EOT</string>
 				<integer>3</integer>
 				<key>argumenttext</key>
 				<string>email</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
 				<key>hotkey</key>
 				<integer>14</integer>
 				<key>hotmod</key>
@@ -391,11 +505,15 @@ EOT</string>
 				<false/>
 				<key>modsmode</key>
 				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
 			<string>5206A75A-39FD-4084-B8A3-8739AED62C91</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -427,66 +545,92 @@ THE SOFTWARE.</string>
 	<dict>
 		<key>0A294727-5556-4045-8D0F-2CF320CF9706</key>
 		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
 			<key>ypos</key>
 			<real>230</real>
 		</dict>
 		<key>30B67D52-9776-4605-BA57-74D88DBA6AF0</key>
 		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
 			<real>230</real>
 		</dict>
 		<key>33E342C4-064F-4152-BE3C-1D0427506826</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>130</real>
 		</dict>
 		<key>35B93386-30BE-4992-A757-2405BC43B489</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
 		<key>3C6974D9-955C-4F0F-B4CD-8CB2C12574FA</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>250</real>
 		</dict>
 		<key>5206A75A-39FD-4084-B8A3-8739AED62C91</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>820</real>
 		</dict>
 		<key>5C9031A7-52E4-4EE9-80CE-0C4BD1A8C6B4</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>350</real>
 		</dict>
 		<key>5D0AD413-7AA8-450B-89F7-0E338C9C64B8</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
 		<key>7801A5A4-845B-4A28-90E3-4498D66A3F72</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>230</real>
 		</dict>
 		<key>7A994322-2AB8-4864-BFE2-D70B04EF3B2D</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>700</real>
 		</dict>
 		<key>B812494E-65FA-4A2F-B69D-4F415A4DCF9E</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>640</real>
 		</dict>
 		<key>F1AC8869-D9DD-42C3-BC95-DBFC24C942A1</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>460</real>
 		</dict>
 		<key>F362AD8A-2F3A-4A3E-B3DC-332530AB5F22</key>
 		<dict>
+			<key>xpos</key>
+			<integer>100</integer>
 			<key>ypos</key>
 			<real>580</real>
 		</dict>
