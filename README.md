@@ -26,4 +26,4 @@ Here are some examples:
 
 Download the workflow below and open in Alfred.
 
-[Download Workflow](https://raw.github.com/vdesabou/alfred-mountain-lion-builtin-sharing/master/MountainLionBuilt-inSharing.alfredworkflow)
+[Download Workflow](https://github.com/vdesabou/alfred-mac-osx-sharing/releases/download/v1.12/alfred-mac-osx-sharing.alfredworkflow)
