@@ -170,7 +170,7 @@
 				<string>echo "{query}" &gt; file_list
 
 osascript &lt;&lt;EOT
-tell application "Alfred 3" to search "share "
+tell application "Alfred 4" to search "share "
 EOT</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -237,6 +237,12 @@ EOT</string>
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -273,7 +279,7 @@ EOT</string>
 			<key>uid</key>
 			<string>0A294727-5556-4045-8D0F-2CF320CF9706</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
